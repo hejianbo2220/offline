@@ -1,0 +1,81 @@
+{
+	"banner": [
+		{"src": "images/banner01.jpg"},
+		{"src": "images/banner02.jpg"},
+		{"src": "images/banner03.jpg"}
+	],
+	"game_list": [
+		{
+			"game_detail": "detail.html",
+			"game_icon": "images/icon.png",
+			"game_name": "秦时明月1",
+			"game_size": "11.1M",
+			"game_intro": "同名漫画原版授权巨制",
+			"game_download": "#"
+		},
+		{
+			"game_detail": "detail.html",
+			"game_icon": "images/icon.png",
+			"game_name": "秦时明月2",
+			"game_size": "22.2M",
+			"game_intro": "同名漫画原版授权巨制",
+			"game_download": "#"
+		},
+		{
+			"game_detail": "detail.html",
+			"game_icon": "images/icon.png",
+			"game_name": "秦时明月3",
+			"game_size": "33.3M",
+			"game_intro": "同名漫画原版授权巨制",
+			"game_download": "#"
+		},
+		{
+			"game_detail": "detail.html",
+			"game_icon": "images/icon.png",
+			"game_name": "秦时明月4",
+			"game_size": "44.4M",
+			"game_intro": "同名漫画原版授权巨制",
+			"game_download": "#"
+		},
+		{
+			"game_detail": "detail.html",
+			"game_icon": "images/icon.png",
+			"game_name": "秦时明月5",
+			"game_size": "55.5M",
+			"game_intro": "同名漫画原版授权巨制",
+			"game_download": "#"
+		},
+		{
+			"game_detail": "detail.html",
+			"game_icon": "images/icon.png",
+			"game_name": "秦时明月6",
+			"game_size": "66.6M",
+			"game_intro": "同名漫画原版授权巨制",
+			"game_download": "#"
+		},
+		{
+			"game_detail": "detail.html",
+			"game_icon": "images/icon.png",
+			"game_name": "秦时明月7",
+			"game_size": "77.7M",
+			"game_intro": "同名漫画原版授权巨制",
+			"game_download": "#"
+		},
+		{
+			"game_detail": "detail.html",
+			"game_icon": "images/icon.png",
+			"game_name": "秦时明月8",
+			"game_size": "88.8M",
+			"game_intro": "同名漫画原版授权巨制",
+			"game_download": "#"
+		},
+		{
+			"game_detail": "detail.html",
+			"game_icon": "images/icon.png",
+			"game_name": "秦时明月9",
+			"game_size": "99.9M",
+			"game_intro": "同名漫画原版授权巨制",
+			"game_download": "#"
+		}
+	]
+}

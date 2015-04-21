@@ -1,0 +1,464 @@
+/* *********
+ *    author:Jason He
+ *    version:1.0.0
+ *    Date:2014-12-25
+ *    file:main.css
+ ********* */
+
+/**
+ * BxSlider v4.1.2 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2014
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+
+/** RESET AND LAYOUT
+===================================*/
+
+.bx-wrapper {
+	position: relative;
+	margin: 0 auto 60px;
+	padding: 0;
+	*zoom: 1;
+}
+
+.bx-wrapper img {
+	max-width: 100%;
+	display: block;
+}
+
+/** THEME
+===================================*/
+
+.bx-wrapper .bx-viewport {
+	-moz-box-shadow: 0 0 5px #ccc;
+	-webkit-box-shadow: 0 0 5px #ccc;
+	box-shadow: 0 0 5px #ccc;
+	border:  5px solid #fff;
+	left: -5px;
+	background: #fff;
+	
+	/*fix other elements on the page moving (on Chrome)*/
+	-webkit-transform: translatez(0);
+	-moz-transform: translatez(0);
+    	-ms-transform: translatez(0);
+    	-o-transform: translatez(0);
+    	transform: translatez(0);
+}
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+	position: absolute;
+	bottom: -30px;
+	width: 100%;
+}
+
+/* LOADER */
+
+.bx-wrapper .bx-loading {
+	min-height: 50px;
+	background: url(../images/bx_loader.gif) center center no-repeat #fff;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+}
+
+/* PAGER */
+
+.bx-wrapper .bx-pager {
+	text-align: center;
+	font-size: .85em;
+	font-family: Arial;
+	font-weight: bold;
+	color: #666;
+	padding-top: 20px;
+}
+
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background: #666;
+	text-indent: -9999px;
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+	outline: 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: #000;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+
+.bx-wrapper .bx-prev {
+	left: 10px;
+	background: url(images/controls.png) no-repeat 0 -32px;
+}
+
+.bx-wrapper .bx-next {
+	right: 10px;
+	background: url(images/controls.png) no-repeat -43px -32px;
+}
+
+.bx-wrapper .bx-prev:hover {
+	background-position: 0 0;
+}
+
+.bx-wrapper .bx-next:hover {
+	background-position: -43px 0;
+}
+
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+	outline: 0;
+	width: 32px;
+	height: 32px;
+	text-indent: -9999px;
+	z-index: 9999;
+}
+
+.bx-wrapper .bx-controls-direction a.disabled {
+	display: none;
+}
+
+/* AUTO CONTROLS (START / STOP) */
+
+.bx-wrapper .bx-controls-auto {
+	text-align: center;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start {
+	display: block;
+	text-indent: -9999px;
+	width: 10px;
+	height: 11px;
+	outline: 0;
+	background: url(images/controls.png) -86px -11px no-repeat;
+	margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active {
+	background-position: -86px 0;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop {
+	display: block;
+	text-indent: -9999px;
+	width: 9px;
+	height: 11px;
+	outline: 0;
+	background: url(images/controls.png) -86px -44px no-repeat;
+	margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+	background-position: -86px -33px;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+	text-align: left;
+	width: 80%;
+}
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+	right: 0;
+	width: 35px;
+}
+
+/* IMAGE CAPTIONS */
+
+.bx-wrapper .bx-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #666\9;
+	background: rgba(80, 80, 80, 0.75);
+	width: 100%;
+}
+
+.bx-wrapper .bx-caption span {
+	color: #fff;
+	font-family: Arial;
+	display: block;
+	font-size: .85em;
+	padding: 10px;
+}
+
+/* reset bxslider */
+.bx-wrapper{
+	margin:0;
+	}
+.bx-wrapper .bx-viewport{
+	border:none;
+	box-shadow:none;
+	top:0;
+	left:0;
+	}
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
+	bottom:5px;
+	right:15px;
+	width:auto;
+	}
+
+/* reset */
+*{
+	margin:0; padding:0;
+	}
+a{
+	outline:none;
+	blr:expression(this.onFocus=this.blur());
+	text-decoration:none;
+	}
+a:focus{
+	outline:none;
+	}
+body{
+	font:12px/20px Arial, "Microsoft YaHei";
+	color:#595959;
+	text-align:center;
+	}
+img{
+	border:none;
+	}
+ul{
+	list-style:none;
+	}
+.clearfix{
+	*zoom:1;
+	}
+.clearfix:before,.clearfix:after{
+	display:table;
+	line-height:0;
+	content:"";
+	}
+.clearfix:after{
+	clear:both;
+	}
+
+/* global */
+body{
+	padding-top:44px;
+	}
+header{
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:1;
+	width:100%;
+	height:44px;
+	background:#3b3a3e;
+	font-size:20px;
+	line-height:44px;
+	color:#fff;
+	text-align:center;
+	}
+.back{
+	display:block;
+	position:absolute;
+	left:15px;
+	top:0;
+	padding-left:20px;
+	background:url(../images/back_nor.png) left center no-repeat;
+	font-size:18px;
+	color:#b4b4b5;
+	}
+.back:active{
+	background:url(../images/back_hl.png) left center no-repeat;
+	color:#fff;
+	}
+.main_wrap{
+	max-width:640px;
+	min-width:320px;
+	margin:0 auto;
+	}
+.game_list{
+	width:94%;
+	box-sizing:border-box;
+	margin:0 auto;
+	padding:10px 5px;
+	border-bottom:1px solid #c8c9ca;
+	}
+.game_wrap{
+	display:inline-block;
+	width:214px;
+	float:left;
+	}
+.game_icon{
+	width:64px;
+	float:left;
+	}
+.game_info{
+	float:left;
+	margin-left:10px;
+	text-align:left;
+	}
+.game_name{
+	width:140px;
+	height:24px;
+	font-size:16px;
+	line-height:24px;
+	color:#3e3a39;
+	overflow:hidden;
+	}
+.game_size{
+	width:140px;
+	height:20px;
+	font-size:14px;
+	color:#ff9500;
+	overflow:hidden;
+	}
+.game_intro{
+	width:140px;
+	height:18px;
+	font-size:11px;
+	line-height:18px;
+	color:#797979;
+	overflow:hidden;
+	}
+.tip{
+	position:fixed;
+	bottom:80px;
+	left:50%;
+	width:100px;
+	height:40px;
+	margin-left:-40px;
+	background:rgba(0,0,0,0.7);
+	border-radius:5px;
+	color:#fff;
+	font-size:14px;
+	line-height:40px;
+	text-align:center;
+	}
+
+/* index */
+.banner img{
+	width:640px;
+	}
+.download_btn{
+	display:inline-block;
+	width:65px;
+	height:33px;
+	float:right;
+	box-sizing:border-box;
+	margin-top:15px;
+	background:#f5f5f5;
+	border:1px solid #dbdcdc;
+	border-radius:4px;
+	font-size:16px;
+	line-height:31px;
+	color:#454545;
+	text-align:center;
+	}
+.download_btn:active{
+	background:#dbdcdc;
+	}
+.footer{
+	width:100%;
+	height:44px;
+	background:#f5f5f5;
+	border-top:1px solid #c8c9ca;
+	font-size:18px;
+	line-height:44px;
+	color:#454545;
+	text-align:center;
+	}
+.footer img{
+	display:inline-block;
+	width:18px;
+	margin-bottom:-2px;
+	}
+
+/* detail */
+.detail_title{
+	width:100%;
+	border:none;
+	}
+.detail_info{
+	width:76%;
+	}
+.detail_name,.detail_size,.detail_intro{
+	width:100%;
+	}
+.screenshot_wrap{
+	width:100%;
+	box-sizing:border-box;
+	padding:0 5px;
+	overflow:hidden;
+	}
+.screenshot img{
+	width:240px;
+	}
+.detail_main{
+	width:100%;
+	box-sizing:border-box;
+	padding:10px 15px;
+	margin-bottom:56px;
+	}
+.detail_header{
+	font-size:15px;
+	line-height:24px;
+	color:#3e3a39;
+	text-align:left;
+	}
+.detail_body{
+	margin-top:4px;
+	font-size:14px;
+	line-height:24px;
+	color:#797979;
+	text-align:left;
+	}
+footer{
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:56px;
+	box-sizing:border-box;
+	padding-top:12px;
+	background:#f5f5f5;
+	border-top:1px solid #c8c9ca;
+	}
+.detail_download{
+	display:block;
+	width:200px;
+	height:32px;
+	box-sizing:border-box;
+	margin:0 auto;
+	background:#fff;
+	border:1px solid #007aff;
+	border-radius:4px;
+	font-size:18px;
+	line-height:32px;
+	color:#007aff;
+	text-align:center;
+	}
+.detail_download:active{
+	background:#007aff;
+	color:#fff;
+	}

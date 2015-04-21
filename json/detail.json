@@ -1,0 +1,17 @@
+{
+	"detail_title": {
+		"game_icon": "images/icon.png",
+		"game_name": "秦时明月1",
+		"game_size": "11.1M",
+		"game_intro": "同名漫画原版授权巨制"
+	},
+	"screenshot_wrap": [
+		{"src": "images/screenshot01.jpg"},
+		{"src": "images/screenshot02.jpg"},
+		{"src": "images/screenshot03.jpg"},
+		{"src": "images/screenshot04.jpg"},
+		{"src": "images/screenshot05.jpg"}
+	],
+	"detail_main": "这是一款非常牛逼的游戏。这是一款非常牛逼的游戏。这是一款非常牛逼的游戏。这是一款非常牛逼的游戏。这是一款非常牛逼的游戏。这是一款非常牛逼的游戏。这是一款非常牛逼的游戏。这是一款非常牛逼的游戏。这是一款非常牛逼的游戏。这是一款非常牛逼的游戏。这是一款非常牛逼的游戏。这是一款非常牛逼的游戏。这是一款非常牛逼的游戏。这是一款非常牛逼的游戏。",
+	"footer": "#"
+}

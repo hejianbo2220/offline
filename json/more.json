@@ -1,0 +1,26 @@
+[
+	{
+		"game_detail": "detail.html",
+		"game_icon": "images/icon.png",
+		"game_name": "秦时明月2",
+		"game_size": "11.1M",
+		"game_intro": "同名漫画原版授权巨制",
+		"game_download": "#"
+	},
+	{
+		"game_detail": "detail.html",
+		"game_icon": "images/icon.png",
+		"game_name": "秦时明月2",
+		"game_size": "22.2M",
+		"game_intro": "同名漫画原版授权巨制",
+		"game_download": "#"
+	},
+	{
+		"game_detail": "detail.html",
+		"game_icon": "images/icon.png",
+		"game_name": "秦时明月3",
+		"game_size": "33.3M",
+		"game_intro": "同名漫画原版授权巨制",
+		"game_download": "#"
+	}
+]
